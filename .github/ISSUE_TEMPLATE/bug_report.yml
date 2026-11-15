@@ -1,0 +1,85 @@
+name: Bug report
+description: Something in MUAFixPack doesn't work as expected.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a problem. One problem per report, please.
+        MUAFixPack.log (in the game's plugins folder) helps the most. It only records
+        information about the game, nothing about your PC or your files.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What went wrong, and what did you expect instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to make it happen
+      description: What you did, step by step, so it can be repeated.
+      placeholder: |
+        1. Start the game
+        2. Open Options > Display
+        3. ...
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Which part of MUAFixPack?
+      options:
+        - Resolution
+        - Movies
+        - Graphics (anisotropic filtering, antialiasing)
+        - Windowed mode
+        - Controllers
+        - Not sure
+    validations:
+      required: true
+  - type: textarea
+    id: log
+    attributes:
+      label: MUAFixPack.log
+      description: Drag MUAFixPack.log from the plugins folder into this box. It is rewritten at every game start, so attach the one from the start where the problem happened.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: MUAFixPack version
+      placeholder: Beta v1
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Windows version
+      placeholder: Windows 11
+  - type: input
+    id: gpu
+    attributes:
+      label: Graphics card
+  - type: input
+    id: resolution
+    attributes:
+      label: Monitor resolution and in-game resolution
+      placeholder: Monitor 3840x2160, game 1920x1080
+  - type: textarea
+    id: controllers
+    attributes:
+      label: Controllers
+      description: Model and connection (USB or Bluetooth), if the problem involves a controller.
+  - type: textarea
+    id: mods
+    attributes:
+      label: Other mods and tools
+      description: Ultimate ASI Loader version, Marvel Mods' Official Characters Pack, 50 Roster Hack and Third Person Modes, dgVoodoo, DS4Windows, Steam Input, and so on.
+  - type: textarea
+    id: settings
+    attributes:
+      label: Changed settings
+      description: Any lines you changed in MUAFixPack.ini (or "none").
