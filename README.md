@@ -159,7 +159,7 @@ MUAFixPack writes `MUAFixPack.log` next to the .asi each time the game starts. I
 
 MUAFixPack has not been tested together with other resolution, widescreen, windowed or controller fix plugins. If you have one, remove it so the two don't conflict. Each fix in MUAFixPack can also be turned off if you want to keep using another solution, like dgVoodoo (graphics) or DS4Windows (controllers): turn off the matching feature in `MUAFixPack.ini` (for example `[Resolution] Enabled=0`, `[Movies] Enabled=0`, `[Windowed] Enabled=0` or `[Controllers] PlayStation=0`), and check `MUAFixPack.log` if something doesn't work.
 
-**MUA Patch from Marvel Mods:** its remastered shadow quality setting doesn't work with MUAFixPack at this time. Shadows appear fuzzy, possibly due to shaders. The game's shadows look good without it.
+**MUA Patch from Marvel Mods:** its remastered shadow quality setting doesn't work with MUAFixPack at this time. Shadows appear fuzzy. The game's shadows look good without it.
 
 ## Compatibility
 Every fix checks the game's code first: `MUA.exe`, and also `libIGDisplay.dll` and `libIGGfx.dll` for windowed mode, `libIGGfx.dll` for the graphics features, and `libCriMovie.dll` for the movie fixes. With a different version, a fix that does not match is left out and the log says so.
