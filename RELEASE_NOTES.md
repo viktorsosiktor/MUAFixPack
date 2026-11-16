@@ -32,6 +32,7 @@ First release. Every feature can be turned off in `MUAFixPack.ini`.
 ## Known issues
 - With an Xbox and a PlayStation controller connected at the same time, the game shows Xbox button icons at this time (the game's own rule: one set of icons for everyone).
 - Switching between windowed and fullscreen while the game runs isn't possible at this time; fullscreen is chosen in `MUAFixPack.ini`.
+- Marvel Mods' MUA Patch: its remastered shadow quality setting doesn't work with MUAFixPack at this time. Shadows appear fuzzy, possibly due to shaders. The game's shadows look good without it.
 
 ## Files
 - `MUAFixPack.asi` - the plugin

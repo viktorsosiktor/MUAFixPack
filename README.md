@@ -52,6 +52,8 @@ Other mods, including some from the Marvel Mods community, have also worked on r
   - `Fullkeyset_PS4_eng.png`
 
 ## Installation
+If you use other plugins that fix the same things (resolution, widescreen, windowed or controller fixes), remove them first, or turn off the matching MUAFixPack feature to keep them (see [Tested with](#tested-with)).
+
 1. Install Ultimate ASI Loader, if you don't have it yet (see [Requirements](#requirements)).
 2. Copy `MUAFixPack.asi` into the game's plugins folder.
 3. Copy the settings file that matches your game into the plugins folder:
@@ -155,7 +157,9 @@ MUAFixPack writes `MUAFixPack.log` next to the .asi each time the game starts. I
 - **Displays:** 3840x2160 (4K), 2560x1440 and 1920x1080.
 - **Marvel Mods:** Official Characters Pack, 50 Roster Hack, Debug Menu, Third Person Modes and MUA Patch.
 
-MUAFixPack has not been tested together with other resolution, widescreen, windowed or controller fix mods. If you use a tool that does the same job, like dgVoodoo (graphics) or DS4Windows (controllers), turn off the matching MUAFixPack feature in `MUAFixPack.ini` (for example `[Resolution] Enabled=0`, `[Movies] Enabled=0`, `[Windowed] Enabled=0` or `[Controllers] PlayStation=0`) so the two don't overlap, and check `MUAFixPack.log` if something doesn't work.
+MUAFixPack has not been tested together with other resolution, widescreen, windowed or controller fix plugins. If you have one, remove it so the two don't conflict. Each fix in MUAFixPack can also be turned off if you want to keep using another solution, like dgVoodoo (graphics) or DS4Windows (controllers): turn off the matching feature in `MUAFixPack.ini` (for example `[Resolution] Enabled=0`, `[Movies] Enabled=0`, `[Windowed] Enabled=0` or `[Controllers] PlayStation=0`), and check `MUAFixPack.log` if something doesn't work.
+
+**MUA Patch from Marvel Mods:** its remastered shadow quality setting doesn't work with MUAFixPack at this time. Shadows appear fuzzy, possibly due to shaders. The game's shadows look good without it.
 
 ## Compatibility
 Every fix checks the game's code first: `MUA.exe`, and also `libIGDisplay.dll` and `libIGGfx.dll` for windowed mode, `libIGGfx.dll` for the graphics features, and `libCriMovie.dll` for the movie fixes. With a different version, a fix that does not match is left out and the log says so.
